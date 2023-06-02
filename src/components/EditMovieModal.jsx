@@ -4,7 +4,6 @@ import {
   Input,
   NumberInput,
   NumberInputField,
-
   Textarea,
   Select,
 } from "@chakra-ui/react";
@@ -12,7 +11,7 @@ import {
 // Edit Movie Modal - allows the user to edit the movie details and save them to the database
 
 const EditMovieModal = ({ movie, editedMovie, setEditiedMovie }) => {
-
+console.log(movie)
   const [movieSuggestions, setMovieSuggestions] = useState([]);
   const [foundMovie, setFoundMovie] = useState(false);
 
@@ -54,7 +53,7 @@ const EditMovieModal = ({ movie, editedMovie, setEditiedMovie }) => {
         <h2 className={styles.header}>Movie Title</h2>
         <Textarea
           placeholder="Add description"
-          value={movie.overview}
+          value={editedMovie.overview}
           onChange={(e) => {
             setEditiedMovie((prevState) => ({
               ...prevState,

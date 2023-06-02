@@ -7,6 +7,7 @@ import {
   ModalContent,
   ModalFooter,
   ModalBody,
+  useToast,
 } from "@chakra-ui/react";
 import axios from "axios";
 import { getMovies } from "../utils/getMovies";
@@ -16,7 +17,7 @@ import EditMovieModal from "./EditMovieModal";
 
 const EditMovie = ({ movie, setMovieList, setFilteredMovieList }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const toast = useToast()
   const [editedMovie, setEditiedMovie] = useState({
     title: movie.title,
     overview: movie.overview,
@@ -41,6 +42,13 @@ const EditMovie = ({ movie, setMovieList, setFilteredMovieList }) => {
         const data = await getMovies();
         setMovieList(data);
         setFilteredMovieList(data);
+        toast({
+          title: "Movie edited successfully.",
+          description: "We've edited the movie for you.",
+          status: 'success',
+          duration: 4000,
+          isClosable: true,
+        })
       }
 
       onClose();

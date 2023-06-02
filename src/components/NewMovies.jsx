@@ -7,6 +7,7 @@ import {
     ModalContent,
     ModalFooter,
     ModalBody,
+    useToast,
   } from '@chakra-ui/react'
 import axios from 'axios'
 import { getMovies } from '../utils/getMovies'
@@ -25,7 +26,7 @@ const NewMovies = ({setMovieList,setFilteredMovieList}) => {
     });
 
     const [canSend, setCanSend] = useState(false)
-
+    const toast = useToast()
     const saveMovie = async() => {
       try{
         const cleanedMovie = JSON.parse(JSON.stringify(newMovie));
@@ -35,6 +36,13 @@ const NewMovies = ({setMovieList,setFilteredMovieList}) => {
           const data = await getMovies()
           setMovieList(data)
           setFilteredMovieList(data)
+          toast({
+            title: 'New Movie Added',
+            description: "We've added your movie for you.",
+            status: 'success',
+            duration: 4000,
+            isClosable: true,
+          })
         }
 
         onClose()
