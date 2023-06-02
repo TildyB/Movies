@@ -19,14 +19,12 @@ const AddNewMovie = ({ newMovie, setNewMovie }) => {
 
   useEffect(() => {
     const addNewTitle = async () => {
-      if (newMovie.title.length > 4 && foundMovie === false) {
+      if (newMovie.title.length > 4 && !foundMovie) {
         const response = await axios.get(
           `https://api.themoviedb.org/3/search/movie?api_key=fe81cd2556cf074a1a365d166ccba87c&language=en-US&query=${newMovie.title}&page=1&include_adult=false`
         );
         setMovieSuggestions(response.data.results);
-      } else {
-        setMovieSuggestions([]);
-      }
+      } 
       if (newMovie.title.length < 4) {
         setFoundMovie(false);
         setNewMovie((prevState) => ({
@@ -62,10 +60,15 @@ const AddNewMovie = ({ newMovie, setNewMovie }) => {
               onClick={(e) => {
                 setNewMovie((prevState) => ({
                   ...prevState,
+                  title: ''
+                }));
+                setNewMovie((prevState) => ({
+                  ...prevState,
                   poster_path: movie.poster_path,
                   title: movie.original_title,
                   backdrop_path: movie.backdrop_path,
                 })),
+                setMovieSuggestions([]);
                   setFoundMovie(true);
               }}
             >
