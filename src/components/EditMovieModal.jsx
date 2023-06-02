@@ -33,8 +33,8 @@ const EditMovieModal = ({ movie, editedMovie, setEditiedMovie }) => {
         />
       </div>
       {movieSuggestions.length > 0 &&
-        movieSuggestions.map((movie) => (
-          <div>
+        movieSuggestions.map((movie,index) => (
+          <div key={index}>
             <button
               onClick={(e) => {
                 setEditiedMovie((prevState) => ({

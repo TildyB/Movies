@@ -56,8 +56,8 @@ const AddNewMovie = ({ newMovie, setNewMovie }) => {
         <h5 className={styles.min}>min 4 characters</h5>
       </div>
       {movieSuggestions.length > 0 &&
-        movieSuggestions.map((movie) => (
-          <div>
+        movieSuggestions.map((movie,index) => (
+          <div key={index}>
             <button
               onClick={(e) => {
                 setNewMovie((prevState) => ({

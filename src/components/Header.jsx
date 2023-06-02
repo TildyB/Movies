@@ -40,7 +40,7 @@ const Header = ({ movieList, setFilteredMovieList, setMovieList }) => {
         <Select width="200px" colorScheme={"red 600"} onChange={handleSelectChange}>
           <option value="All Movies">All Movies</option>
           {ageRestrictionsArray.map((ageRestriction) => (
-            <option index={ageRestriction} value={ageRestriction}>
+            <option key={ageRestriction} index={ageRestriction} value={ageRestriction}>
               {ageRestriction}
             </option>
           ))}

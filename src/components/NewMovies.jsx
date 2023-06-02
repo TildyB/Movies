@@ -29,7 +29,7 @@ const NewMovies = ({setMovieList,setFilteredMovieList}) => {
     const saveMovie = async() => {
       try{
         const cleanedMovie = JSON.parse(JSON.stringify(newMovie));
-        const response = await axios.post('https://crudcrud.com/api/b11a0e31ef7142c2bfb3d25950051e96/filmek', cleanedMovie)
+        const response = await axios.post(`${import.meta.env.VITE_API_URL}/filmek`, cleanedMovie)
         console.log(response)
         if(response.status === 201){
           const data = await getMovies()
