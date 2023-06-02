@@ -36,11 +36,12 @@ const Header = ({ movieList, setFilteredMovieList, setMovieList }) => {
         alt=""
         className={styles.logoImg}
       />
-      <div className={styles.rightHeaderDiv}>    
+      <div className={styles.rightHeaderDiv}> 
+      <h5>Age Restrictions:</h5>   
         <Select width="200px" colorScheme={"red 600"} onChange={handleSelectChange}>
-          <option value="All Movies">All Movies</option>
+          <option style={{ color: 'white' }} value="All Movies">All Movies</option>
           {ageRestrictionsArray.map((ageRestriction) => (
-            <option key={ageRestriction} index={ageRestriction} value={ageRestriction}>
+            <option style={{ color: 'black' }} key={ageRestriction} index={ageRestriction} value={ageRestriction}>
               {ageRestriction}
             </option>
           ))}

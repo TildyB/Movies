@@ -17,9 +17,6 @@ function App() {
   const [movieList, setMovieList] = useState([]);
   const [filteredMovieList, setFilteredMovieList] = useState([]);
 
-/*   useEffect(() => {
-    postMovies()
-  }, []); */
 
   useEffect(()=>{
     if (!movieList.length) {

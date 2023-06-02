@@ -78,7 +78,7 @@ const EditMovieModal = ({ movie, editedMovie, setEditiedMovie }) => {
         </NumberInput>
       </div>
       <div>
-        <h2>Age Ristriction</h2>
+        <h2>Age Restriction</h2>
         <Select
           defaultValue={movie.age_restrictions}
           placeholder="Select option"
@@ -92,8 +92,8 @@ const EditMovieModal = ({ movie, editedMovie, setEditiedMovie }) => {
           <option value="No One 17 and Under Admitted">
             No One 17 and Under Admitted
           </option>
-          <option value="General Audiences - All ages are admitted.">
-            General Audiences - All ages are admitted.
+          <option value="General Audiences - All ages admitted">
+            General Audiences - All ages admitted
           </option>
           <option value="Parents Strongly Cautioned">
             Parents Strongly Cautioned

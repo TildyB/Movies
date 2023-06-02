@@ -26,7 +26,7 @@ function MovieCard({ movie, isLoggedIn, setMovieList, setFilteredMovieList }) {
     const id = JSON.parse(JSON.stringify(movie._id));
     try {
       const response = await axios.delete(
-        `${import.meta.env.VITE_API_URL}/filmek/${id}`
+        `${import.meta.env.VITE_API_URL}/films/${id}`
       );
       if (response.status === 200) {
         const data = await getMovies();

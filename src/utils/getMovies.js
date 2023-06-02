@@ -3,7 +3,7 @@ import axios from "axios"
 
 
 export const getMovies = async() =>{
-    const url = `${import.meta.env.VITE_API_URL}/filmek`
+    const url = `${import.meta.env.VITE_API_URL}/films`
     try{
         const result = await axios.get(url)
         return result.data

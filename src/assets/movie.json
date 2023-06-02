@@ -43,7 +43,7 @@
       "video": false,
       "vote_average": 7.8,
       "vote_count": 3875,
-      "age_restrictions": "General Audiences - All ages are admitted."
+      "age_restrictions": "General Audiences - All ages are admitted"
 
     },
     {
@@ -87,7 +87,7 @@
       "video": false,
       "vote_average": 6.1,
       "vote_count": 344,
-      "age_restrictions": "Parental Guidance Suggested."
+      "age_restrictions": "Parental Guidance Suggested"
     },
     {
       "adult": false,
@@ -128,7 +128,7 @@
       "video": false,
       "vote_average": 6.5,
       "vote_count": 3046,
-        "age_restrictions": "General Audiences - All ages admitted."
+        "age_restrictions": "General Audiences - All ages admitted"
     },
     {
       "adult": false,
@@ -169,7 +169,7 @@
       "video": false,
       "vote_average": 7.7,
       "vote_count": 8259,
-        "age_restrictions": "General Audiences - All ages admitted."
+        "age_restrictions": "General Audiences - All ages admitted"
 
     },
     {
@@ -191,7 +191,7 @@
       "video": false,
       "vote_average": 8.1,
       "vote_count": 1721,
-        "age_restrictions": "General Audiences - All ages admitted."
+        "age_restrictions": "General Audiences - All ages admitted"
     },
     {
       "adult": false,
@@ -402,7 +402,7 @@
       "video": false,
       "vote_average": 8.3,
       "vote_count": 5627,
-      "age_restrictions":"General Audiences - All ages are admitted."
+      "age_restrictions":"General Audiences - All ages admitted"
     },
     {
       "adult": false,
@@ -424,6 +424,6 @@
       "video": false,
       "vote_average": 8,
       "vote_count": 40,
-      "age_restrictions":"General Audiences - All ages are admitted."
+      "age_restrictions":"General Audiences - All ages admitted"
     }
   ]

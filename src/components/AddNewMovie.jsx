@@ -74,7 +74,7 @@ const AddNewMovie = ({ newMovie, setNewMovie }) => {
           </div>
         ))}
       <div>
-        <h2>Movie Title</h2>
+        <h2>Movie Description</h2>
         <Textarea
           placeholder="Add description"
           onChange={(e) => {
@@ -113,8 +113,8 @@ const AddNewMovie = ({ newMovie, setNewMovie }) => {
           <option value="No One 17 and Under Admitted">
             No One 17 and Under Admitted
           </option>
-          <option value="General Audiences - All ages are admitted.">
-            General Audiences - All ages are admitted.
+          <option value="General Audiences - All ages admitted">
+            General Audiences - All ages admitted
           </option>
           <option value="Parents Strongly Cautioned">
             Parents Strongly Cautioned
@@ -124,12 +124,14 @@ const AddNewMovie = ({ newMovie, setNewMovie }) => {
           </option>
         </Select>
       </div>
+      <div className={styles.poster}>
       {newMovie.poster_path.length > 0 && (
         <img
           src={`https://image.tmdb.org/t/p/w200/${newMovie.poster_path}`}
           alt=""
         />
       )}
+      </div>
     </>
   );
 };

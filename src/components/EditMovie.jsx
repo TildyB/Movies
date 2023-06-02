@@ -33,7 +33,7 @@ const EditMovie = ({ movie, setMovieList, setFilteredMovieList }) => {
       const cleanedEditedMovie = JSON.parse(JSON.stringify(editedMovie));
       const id = JSON.parse(JSON.stringify(movie._id));
       const response = await axios.put(
-        `${import.meta.env.VITE_API_URL}/filmek/${id}`,
+        `${import.meta.env.VITE_API_URL}/films/${id}`,
         cleanedEditedMovie
       );
       console.log(response);
