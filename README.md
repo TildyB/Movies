@@ -17,7 +17,7 @@ It also provides a menu where you can add new movies and filter them based on ag
 ## Installation
 
 1. Clone the repository:
-      ``shell
+      ```shell
       git clone https://github.com/TildyB/Movies.git
 2. Navigate to the project directory: 
       cd Movies
