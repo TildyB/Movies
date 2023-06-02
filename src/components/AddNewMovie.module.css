@@ -1,0 +1,11 @@
+.min{
+    color: red;
+    font-size: 0.6rem;
+    text-align: right;
+}
+.header{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #032541; 
+}

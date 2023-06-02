@@ -1,0 +1,15 @@
+.header2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #032541; 
+}
+.poster{
+    display:flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+.poster img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+}
