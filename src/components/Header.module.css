@@ -11,6 +11,7 @@
     padding: 1rem 2rem;
     background-color: #6e8191;
     position: fixed;
+    overflow: hidden;
 }
 .user{
     color: aliceblue;
