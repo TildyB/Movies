@@ -17,11 +17,16 @@ It also provides a menu where you can add new movies and filter them based on ag
 ## Installation
 
 1. Clone the repository:
+      ```shell
       git clone https://github.com/TildyB/Movies.git
 2. Navigate to the project directory: 
+      ```shell
       cd Movies
 3. Install the dependencies:
+      ```shell
       npm install
+4. Create a .env file in the root directory of the project.
+5. Inside the .env file, provide the correct API URL for the VITE_API_URL variable:
   
 ## Usage
 
